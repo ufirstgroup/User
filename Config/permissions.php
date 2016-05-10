@@ -16,4 +16,8 @@ return [
         'update',
         'destroy',
     ],
+    'user.profile' => [
+        'edit',
+        'update',
+    ],
 ];

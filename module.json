@@ -7,6 +7,7 @@
   "active": 1,
   "order": 1,
   "providers": [
+    "Modules\\User\\Providers\\AssetServiceProvider",
     "Modules\\User\\Providers\\UserServiceProvider",
     "Modules\\User\\Providers\\EventServiceProvider",
     "Modules\\User\\Providers\\RouteServiceProvider"

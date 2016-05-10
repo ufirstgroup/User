@@ -8,6 +8,9 @@ $router->group(['prefix' => '/user'], function () {
     put('users/{users}/edit', ['as' => 'admin.user.user.update', 'uses' => 'UserController@update']);
     delete('users/{users}', ['as' => 'admin.user.user.destroy', 'uses' => 'UserController@destroy']);
 
+    get('profile/edit', ['as' => 'admin.user.profile.edit', 'uses' => 'ProfileController@edit']);
+    put('profile/{users}/edit', ['as' => 'admin.user.profile.update', 'uses' => 'ProfileController@update']);
+
     get('roles', ['as' => 'admin.user.role.index', 'uses' => 'RolesController@index']);
     get('roles/create', ['as' => 'admin.user.role.create', 'uses' => 'RolesController@create']);
     post('roles', ['as' => 'admin.user.role.store', 'uses' => 'RolesController@store']);
